@@ -76,6 +76,7 @@
 		19C9B0A120B35E4A005625C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19919D4320B33FA000951DD1 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,7 +84,6 @@
 		19C9B0A220B35E55005625C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19919D4320B33FA000951DD1 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
