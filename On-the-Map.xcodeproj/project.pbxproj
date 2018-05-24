@@ -54,10 +54,10 @@
 		19919D4020B33FA000951DD1 /* On-the-Map */ = {
 			isa = PBXGroup;
 			children = (
+				19919D4120B33FA000951DD1 /* AppDelegate.swift */,
 				19C9B0A020B35E37005625C0 /* Model */,
 				19C9B0A220B35E55005625C0 /* Controller */,
 				19C9B0A120B35E4A005625C0 /* View */,
-				19919D4120B33FA000951DD1 /* AppDelegate.swift */,
 				19919D4520B33FA000951DD1 /* Main.storyboard */,
 				19919D4820B33FA100951DD1 /* Assets.xcassets */,
 				19919D4A20B33FA100951DD1 /* LaunchScreen.storyboard */,
