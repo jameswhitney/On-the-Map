@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1917995620BDA6DB00CF1C93 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917995520BDA6DB00CF1C93 /* GCDBlackBox.swift */; };
 		19919D4220B33FA000951DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19919D4120B33FA000951DD1 /* AppDelegate.swift */; };
 		19919D4420B33FA000951DD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19919D4320B33FA000951DD1 /* LoginViewController.swift */; };
 		19919D4720B33FA000951DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19919D4520B33FA000951DD1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1917995520BDA6DB00CF1C93 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		19919D3E20B33FA000951DD1 /* On-the-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On-the-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19919D4120B33FA000951DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19919D4320B33FA000951DD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				19919D4120B33FA000951DD1 /* AppDelegate.swift */,
+				1917995520BDA6DB00CF1C93 /* GCDBlackBox.swift */,
 				19C9B0A020B35E37005625C0 /* Model */,
 				19C9B0A220B35E55005625C0 /* Controller */,
 				19C9B0A120B35E4A005625C0 /* View */,
@@ -169,6 +172,7 @@
 				19D563BC20B8502C0081EC15 /* OTMClient.swift in Sources */,
 				19919D4420B33FA000951DD1 /* LoginViewController.swift in Sources */,
 				19919D4220B33FA000951DD1 /* AppDelegate.swift in Sources */,
+				1917995620BDA6DB00CF1C93 /* GCDBlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
