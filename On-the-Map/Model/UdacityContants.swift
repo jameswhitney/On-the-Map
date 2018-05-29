@@ -19,15 +19,16 @@ extension OTMClient {
         
         // MARK: URLs
         static let ApiScheme = "https"
-        static let ApiHost = "www.udacity.com"
         static let ParseApiHost = "parse.udacity.com"
+        static let ParseApiPath = "/parse"
+        static let UdacitySessionURL = "https://www.udacity.com/api/session"
+        
         
     }
     
-    
+    // MARK: Methods
     struct Methods {
         
-        static let Parse = "/parse"
         static let ParseClass = "/classes"
         static let StudentLocation = "/StudentLocation"
     }
