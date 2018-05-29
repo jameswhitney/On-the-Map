@@ -8,5 +8,25 @@
 
 import Foundation
 
+// MARK: - ORMClient: NSObject
+
 class OTMClient: NSObject {
+    
+    // MARK: Properties
+    
+    // create shared url session singleton
+    var session = URLSession.shared
+    
+    // authentication state
+    var userID: String!
+    var sessionID: String!
+    
+    // MARK: Initializers
+    override init() {
+        super.init()
+    }
+    
+    // MARK: GET
+    
+    
 }
