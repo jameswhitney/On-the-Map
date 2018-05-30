@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var debugLabel: UILabel!
+    @IBOutlet weak var activityView: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
@@ -39,12 +40,17 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
 }
 
 private extension LoginViewController {
     
     func setUIEnabled(_ enabled: Bool) {
+        emailTextField.isEnabled = enabled
+        passwordTextField.isEnabled = enabled
         loginButton.isEnabled = enabled
+        debugLabel.text = ""
         debugLabel.isEnabled = enabled
         
         if enabled {
