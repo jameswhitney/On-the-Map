@@ -27,6 +27,33 @@ class OTMClient: NSObject {
     }
     
     // MARK: GET
+
+    // Create reusable function for GET methods
+    // func taskForGETMethod(_ method: String, parameters: [String:AnyObject], completionHandlerForGET: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) -> URLSessionDataTask {}
     
+    // MARK: POST
+    
+    // Create reusable function for POST methods
+    // func taskForPOSTMethod(_ method: String, parameters: [String:AnyObject], jsonBody: String, completionHandlerForPOST: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) -> URLSessionDataTask {}
+    
+    // MARK: PUT
+    
+    // MARK: DELETE
+    
+    // MARK: Helpers
+    
+    // Create function to parse JSON object and return a Swift Foundation object
+    private func convertDataWithCompletionHandler(_ data: Data, completionHandlerForConvertData: (_ result: AnyObject?, _ error: NSError?) -> Void) {
+        
+        var parsedResult: AnyObject! = nil
+        do {
+            parsedResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as AnyObject
+        } catch {
+            let userInfo = [NSLocalizedDescriptionKey: "Could not parse JSON data: '\(data)'"]
+            completionHandlerForConvertData(nil, NSError(domain: "convertDataWithCompletionHandler", code: 1, userInfo: userInfo))
+        }
+        
+        completionHandlerForConvertData(parsedResult, nil)
+    }
     
 }

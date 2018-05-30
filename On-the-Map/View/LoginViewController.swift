@@ -71,26 +71,26 @@ class LoginViewController: UIViewController {
 }
 
 //private extension LoginViewController {
-//    
+//
 //    func setUIEnabled(_ enabled: Bool) {
 //        emailTextField.isEnabled = enabled
 //        passwordTextField.isEnabled = enabled
 //        loginButton.isEnabled = enabled
 //        debugLabel.text = ""
 //        debugLabel.isEnabled = enabled
-//        
+//
 //        if enabled {
 //            loginButton.alpha = 1.0
 //        } else {
 //            loginButton.alpha = 0.5
 //        }
-//    
+//
 //        func displayError(_ errorString: String?) {
 //            if let errorString = errorString {
 //                debugLabel.text = errorString
 //            }
 //        }
-//        
+//
 //    }
 //}
 
