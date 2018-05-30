@@ -23,20 +23,18 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        print("LOG IN button pressed")
+//    @IBAction func loginButtonPressed(_ sender: Any) {
+//        print("LOG IN button pressed")
+//
+//        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+//            debugLabel.text = "Please enter your email and password"
+//        } else {
+//            setUIEnabled(false)
+//            // TODO: create function to authorize and login user
+//            userLogin()
+//        }
+    @IBAction func userLogin(_ sender: Any) {
         
-        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
-            debugLabel.text = "Please enter your email and password"
-        } else {
-            setUIEnabled(false)
-            // TODO: create function to authorize and login user
-            userLogin()
-        }
-    }
-    
-    private func userLogin() {
-        activityView.startAnimating()
         let email = emailTextField.text!
         let password = passwordTextField.text!
         var request = URLRequest(url: URL(string: "https://www.udacity.com/api/session")!)
@@ -56,39 +54,44 @@ class LoginViewController: UIViewController {
         }
         task.resume()
     }
+
+    
+//    private func completeLogin() {
+//        performUIUpdatesOnMain {
+//            self.debugLabel.text = ""
+//            self.emailTextField.text = ""
+//        }
+//    }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
 }
 
-private extension LoginViewController {
-    
-    func setUIEnabled(_ enabled: Bool) {
-        emailTextField.isEnabled = enabled
-        passwordTextField.isEnabled = enabled
-        loginButton.isEnabled = enabled
-        debugLabel.text = ""
-        debugLabel.isEnabled = enabled
-        
-        if enabled {
-            loginButton.alpha = 1.0
-        } else {
-            loginButton.alpha = 0.5
-        }
-    
-        func displayError(_ errorString: String?) {
-            if let errorString = errorString {
-                debugLabel.text = errorString
-            }
-        }
-        
-    }
-}
+//private extension LoginViewController {
+//    
+//    func setUIEnabled(_ enabled: Bool) {
+//        emailTextField.isEnabled = enabled
+//        passwordTextField.isEnabled = enabled
+//        loginButton.isEnabled = enabled
+//        debugLabel.text = ""
+//        debugLabel.isEnabled = enabled
+//        
+//        if enabled {
+//            loginButton.alpha = 1.0
+//        } else {
+//            loginButton.alpha = 0.5
+//        }
+//    
+//        func displayError(_ errorString: String?) {
+//            if let errorString = errorString {
+//                debugLabel.text = errorString
+//            }
+//        }
+//        
+//    }
+//}
 
 
