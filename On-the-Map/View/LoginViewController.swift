@@ -22,8 +22,15 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func completeLogin(_ sender: Any) {
+    @IBAction func loginButtonPressed(_ sender: Any) {
         print("LOG IN button pressed")
+        
+        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+            debugLabel.text = "Please enter your email and password"
+        } else {
+            setUIEnabled(false)
+            // TODO: create function to authorize and login user
+        }
     }
     
     
@@ -31,7 +38,28 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
+
+private extension LoginViewController {
+    
+    func setUIEnabled(_ enabled: Bool) {
+        loginButton.isEnabled = enabled
+        debugLabel.isEnabled = enabled
+        
+        if enabled {
+            loginButton.alpha = 1.0
+        } else {
+            loginButton.alpha = 0.5
+        }
+    
+        func displayError(_ errorString: String?) {
+            if let errorString = errorString {
+                debugLabel.text = errorString
+            }
+        }
+        
+    }
+}
+
 

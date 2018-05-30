@@ -13,9 +13,10 @@ extension OTMClient {
     // MARK: Constants
     struct Constants {
         
-        // MARK: Parse API Key
+        // MARK: Parse Parameters
         static let ParseApiKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
         static let AppID = "QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr"
+        static let StudentLimit = 50
         
         // MARK: URLs
         static let ApiScheme = "https"
