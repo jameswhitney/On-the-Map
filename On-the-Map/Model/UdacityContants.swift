@@ -30,8 +30,7 @@ extension OTMClient {
     // MARK: Methods
     struct Methods {
         
-        static let ParseClass = "/classes"
-        static let StudentLocation = "/StudentLocation"
+        static let StudentLocation = "/classes/StudentLocation"
     }
     
 }
