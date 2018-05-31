@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
         
         let email = emailTextField.text!
         let password = passwordTextField.text!
-        var request = URLRequest(url: URL(string: "https://www.udacity.com/api/session")!)
+        var request = URLRequest(url: URL(string: OTMClient.Constants.UdacitySessionURL)!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -60,6 +60,10 @@ class LoginViewController: UIViewController {
 //        performUIUpdatesOnMain {
 //            self.debugLabel.text = ""
 //            self.emailTextField.text = ""
+//            self.passwordTextField.text = ""
+//
+//            let controller = self.storyboard!.instantiateViewController(withIdentifier: "OTMTabBarController") as! UITabBarController
+//            self.present(controller, animated: true, completion: nil)
 //        }
 //    }
     

@@ -43,7 +43,6 @@
                                         </state>
                                         <connections>
                                             <action selector="userLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sq-o5-Xpp"/>
-                                            <segue destination="7t8-mY-oDO" kind="show" id="QJj-tT-O8Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -211,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1669.5999999999999" y="-302.6986506746627"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--OTMTabBarController-->
         <scene sceneID="Nz3-zf-7l9">
             <objects>
-                <tabBarController id="7t8-mY-oDO" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="OTMTabBarController" title="OTMTabBarController" id="7t8-mY-oDO" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tLV-oM-XzB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,6 +237,6 @@
         <image name="logo-u" width="62" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nvv-au-wzO"/>
+        <segue reference="gEr-uL-F83"/>
     </inferredMetricsTieBreakers>
 </document>
