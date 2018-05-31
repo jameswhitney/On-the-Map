@@ -22,7 +22,7 @@ extension OTMClient {
         static let ApiScheme = "https"
         static let ParseApiHost = "parse.udacity.com"
         static let ParseApiPath = "/parse"
-        static let UdacitySessionURL = "https://www.udacity.com/api/session"
+        static let UdacityLoginSession = "https://www.udacity.com/api/session"
         
         
     }

@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
         
         let email = emailTextField.text!
         let password = passwordTextField.text!
-        var request = URLRequest(url: URL(string: OTMClient.Constants.UdacitySessionURL)!)
+        var request = URLRequest(url: URL(string: OTMClient.Constants.UdacityLoginSession)!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
