@@ -17,22 +17,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var debugLabel: UILabel!
     @IBOutlet weak var activityView: UIActivityIndicatorView!
     
+    var session: URLSession!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        debugLabel.text = ""
+    }
 
-//    @IBAction func loginButtonPressed(_ sender: Any) {
-//        print("LOG IN button pressed")
-//
-//        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
-//            debugLabel.text = "Please enter your email and password"
-//        } else {
-//            setUIEnabled(false)
-//            // TODO: create function to authorize and login user
-//            userLogin()
-//        }
     @IBAction func userLogin(_ sender: Any) {
         
         let email = emailTextField.text!
@@ -56,16 +53,7 @@ class LoginViewController: UIViewController {
     }
 
     
-//    private func completeLogin() {
-//        performUIUpdatesOnMain {
-//            self.debugLabel.text = ""
-//            self.emailTextField.text = ""
-//            self.passwordTextField.text = ""
-//
-//            let controller = self.storyboard!.instantiateViewController(withIdentifier: "OTMTabBarController") as! UITabBarController
-//            self.present(controller, animated: true, completion: nil)
-//        }
-//    }
+
     
     
     override func didReceiveMemoryWarning() {
@@ -74,28 +62,5 @@ class LoginViewController: UIViewController {
     }
 }
 
-//private extension LoginViewController {
-//
-//    func setUIEnabled(_ enabled: Bool) {
-//        emailTextField.isEnabled = enabled
-//        passwordTextField.isEnabled = enabled
-//        loginButton.isEnabled = enabled
-//        debugLabel.text = ""
-//        debugLabel.isEnabled = enabled
-//
-//        if enabled {
-//            loginButton.alpha = 1.0
-//        } else {
-//            loginButton.alpha = 0.5
-//        }
-//
-//        func displayError(_ errorString: String?) {
-//            if let errorString = errorString {
-//                debugLabel.text = errorString
-//            }
-//        }
-//
-//    }
-//}
 
 

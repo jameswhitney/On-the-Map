@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,37 +63,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-PA-Zfo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-PA-Zfo">
                                 <rect key="frame" x="188" y="506" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eND-44-6eP">
-                                <rect key="frame" x="178" y="496" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ItZ-QB-nf8" firstAttribute="centerX" secondItem="WwX-BG-R0e" secondAttribute="centerX" id="0Zy-PR-XcA"/>
-                            <constraint firstItem="eND-44-6eP" firstAttribute="centerY" secondItem="ngD-PA-Zfo" secondAttribute="centerY" id="0gk-8S-cSZ"/>
-                            <constraint firstItem="eND-44-6eP" firstAttribute="centerX" secondItem="MJE-QD-hYL" secondAttribute="centerX" id="8Pp-vb-AWY"/>
                             <constraint firstItem="MJE-QD-hYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Bgj-Fa-Y5a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJE-QD-hYL" secondAttribute="trailing" constant="82.5" id="Cv4-wc-SqL"/>
                             <constraint firstItem="WwX-BG-R0e" firstAttribute="top" secondItem="ItZ-QB-nf8" secondAttribute="bottom" constant="50" id="FIj-cw-uBN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eND-44-6eP" secondAttribute="bottom" constant="151" id="He6-KM-OLY"/>
                             <constraint firstItem="ItZ-QB-nf8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="JuT-nU-jzN"/>
                             <constraint firstItem="MJE-QD-hYL" firstAttribute="top" secondItem="WwX-BG-R0e" secondAttribute="bottom" constant="8" symbolic="YES" id="Mzu-wf-ODM"/>
                             <constraint firstItem="ItZ-QB-nf8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVi-cv-4DU"/>
                             <constraint firstItem="ItZ-QB-nf8" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="eMW-A0-lJS"/>
-                            <constraint firstItem="eND-44-6eP" firstAttribute="centerX" secondItem="ngD-PA-Zfo" secondAttribute="centerX" id="g85-ft-aPf"/>
                             <constraint firstItem="ItZ-QB-nf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="jTm-fr-RNn"/>
                             <constraint firstItem="WwX-BG-R0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x0R-t1-ju7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="activityView" destination="eND-44-6eP" id="qFS-kn-ObR"/>
                         <outlet property="debugLabel" destination="ngD-PA-Zfo" id="6JN-08-HoR"/>
                         <outlet property="emailTextField" destination="eOk-LF-A77" id="mCZ-Cc-AON"/>
                         <outlet property="loginButton" destination="KZ0-3L-sVH" id="uXP-ql-OEL"/>
