@@ -13,7 +13,7 @@
 		19919D4720B33FA000951DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19919D4520B33FA000951DD1 /* Main.storyboard */; };
 		19919D4920B33FA100951DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19919D4820B33FA100951DD1 /* Assets.xcassets */; };
 		19919D4C20B33FA100951DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19919D4A20B33FA100951DD1 /* LaunchScreen.storyboard */; };
-		19D563BA20B846260081EC15 /* UdacityContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D563B920B846260081EC15 /* UdacityContants.swift */; };
+		19D563BA20B846260081EC15 /* OTMContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D563B920B846260081EC15 /* OTMContants.swift */; };
 		19D563BC20B8502C0081EC15 /* OTMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D563BB20B8502C0081EC15 /* OTMClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		19919D4820B33FA100951DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19919D4B20B33FA100951DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19919D4D20B33FA100951DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19D563B920B846260081EC15 /* UdacityContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityContants.swift; sourceTree = "<group>"; };
+		19D563B920B846260081EC15 /* OTMContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMContants.swift; sourceTree = "<group>"; };
 		19D563BB20B8502C0081EC15 /* OTMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 		19C9B0A020B35E37005625C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				19D563B920B846260081EC15 /* UdacityContants.swift */,
+				19D563B920B846260081EC15 /* OTMContants.swift */,
 				19D563BB20B8502C0081EC15 /* OTMClient.swift */,
 			);
 			path = Model;
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D563BA20B846260081EC15 /* UdacityContants.swift in Sources */,
+				19D563BA20B846260081EC15 /* OTMContants.swift in Sources */,
 				19D563BC20B8502C0081EC15 /* OTMClient.swift in Sources */,
 				19919D4420B33FA000951DD1 /* LoginViewController.swift in Sources */,
 				19919D4220B33FA000951DD1 /* AppDelegate.swift in Sources */,
