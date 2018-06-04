@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1917995620BDA6DB00CF1C93 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1917995520BDA6DB00CF1C93 /* GCDBlackBox.swift */; };
+		1932381120C4BBF2002EA7AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1932381020C4BBF2002EA7AE /* MapViewController.swift */; };
+		1932381320C4BC7D002EA7AE /* StudentDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1932381220C4BC7D002EA7AE /* StudentDetailTableViewController.swift */; };
 		19919D4220B33FA000951DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19919D4120B33FA000951DD1 /* AppDelegate.swift */; };
 		19919D4420B33FA000951DD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19919D4320B33FA000951DD1 /* LoginViewController.swift */; };
 		19919D4720B33FA000951DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19919D4520B33FA000951DD1 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		1917995520BDA6DB00CF1C93 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		1932381020C4BBF2002EA7AE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1932381220C4BC7D002EA7AE /* StudentDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailTableViewController.swift; sourceTree = "<group>"; };
 		19919D3E20B33FA000951DD1 /* On-the-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On-the-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19919D4120B33FA000951DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19919D4320B33FA000951DD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				19919D4320B33FA000951DD1 /* LoginViewController.swift */,
+				1932381020C4BBF2002EA7AE /* MapViewController.swift */,
+				1932381220C4BC7D002EA7AE /* StudentDetailTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,10 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D563BA20B846260081EC15 /* OTMContants.swift in Sources */,
+				1932381120C4BBF2002EA7AE /* MapViewController.swift in Sources */,
 				19D563BC20B8502C0081EC15 /* OTMClient.swift in Sources */,
 				19919D4420B33FA000951DD1 /* LoginViewController.swift in Sources */,
 				19919D4220B33FA000951DD1 /* AppDelegate.swift in Sources */,
 				1917995620BDA6DB00CF1C93 /* GCDBlackBox.swift in Sources */,
+				1932381320C4BC7D002EA7AE /* StudentDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

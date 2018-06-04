@@ -43,7 +43,6 @@
                                         </state>
                                         <connections>
                                             <action selector="userLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sq-o5-Xpp"/>
-                                            <segue destination="LOP-e3-hu8" kind="show" id="OsX-M9-hYK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,7 +135,7 @@
         <!--MapViewController-->
         <scene sceneID="glz-La-DgY">
             <objects>
-                <viewController id="tDv-On-2E8" userLabel="MapViewController" sceneMemberID="viewController">
+                <viewController id="tDv-On-2E8" userLabel="MapViewController" customClass="MapViewController" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4m-FI-SYd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,16 +161,16 @@
             </objects>
             <point key="canvasLocation" x="1693.5999999999999" y="-69.715142428785612"/>
         </scene>
-        <!--LocationListViewController-->
+        <!--StudentDetailTableViewController-->
         <scene sceneID="ANZ-Tr-jFe">
             <objects>
-                <tableViewController id="bwa-lu-5F1" userLabel="LocationListViewController" sceneMemberID="viewController">
+                <tableViewController id="bwa-lu-5F1" userLabel="StudentDetailTableViewController" customClass="StudentDetailListViewController" customModule="On_the_Map" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gvd-Hl-62j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vef-uH-N0j">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentDetailTableViewCell" id="Vef-uH-N0j">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vef-uH-N0j" id="jJ3-pH-dFp">
