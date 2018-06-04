@@ -42,7 +42,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="userLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sq-o5-Xpp"/>
+                                            <action selector="userLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDz-SQ-LGm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -101,7 +101,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="UUJ-kE-5uB">
             <objects>
-                <tabBarController id="LOP-e3-hu8" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="LOP-e3-hu8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ry9-HJ-q71">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -119,7 +119,7 @@
         <!--Map-->
         <scene sceneID="jWR-pD-vNX">
             <objects>
-                <navigationController id="f2g-5y-AMn" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapNavigationController" id="f2g-5y-AMn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="icon_mapview-selected" selectedImage="icon_mapview-selected" id="9zP-LU-kp4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dXa-Tg-hRA">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

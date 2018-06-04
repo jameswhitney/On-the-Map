@@ -49,8 +49,16 @@ class LoginViewController: UIViewController {
             print(String(data: newData!, encoding: .utf8)!)
         }
         task.resume()
+        completeLogin()
+        
     }
 
+    private func completeLogin() {
+        debugLabel.text = ""
+        let controller = storyboard!.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        present(controller, animated: true, completion: nil)
+        
+    }
     
 
     
