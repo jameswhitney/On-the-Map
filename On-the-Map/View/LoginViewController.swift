@@ -15,7 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var debugLabel: UILabel!
-    @IBOutlet weak var activityView: UIActivityIndicatorView!
     
     var session: URLSession!
     

@@ -56,4 +56,14 @@ class OTMClient: NSObject {
         completionHandlerForConvertData(parsedResult, nil)
     }
     
+    
+    
+    // MARK: Shared Instance
+    
+    class func sharedInstance() -> OTMClient {
+        struct Singleton {
+            static var sharedInstance = OTMClient()
+        }
+        return Singleton.sharedInstance
+    }
 }
