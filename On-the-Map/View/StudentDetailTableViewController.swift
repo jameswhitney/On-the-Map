@@ -12,5 +12,11 @@ import UIKit
 // MARK: - StudentDetailTableViewController: UITableViewController
 
 class StudentDetailTableViewController: UITableViewController {
-    // TODO:
+    
+    // TODO: Create a table that populates each cell
+    // with a student's name and url link. Also allow user
+    // to add/overwrite link, and location by
+    // clicking a + button which will present the AddLocationViewController
+    // which allows the user to enter a new location and link.
+    
 }
