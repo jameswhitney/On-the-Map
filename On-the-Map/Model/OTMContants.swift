@@ -8,28 +8,35 @@
 
 import Foundation
 
-extension OTMClient {
+
     
-    // MARK: Constants
-    struct Constants {
-        
-        // MARK: Parse Parameters
-        static let ParseApiKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
-        static let AppID = "QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr"
-        
+// MARK: Constants
+struct Constants {
+    
+
+    struct OTM {
         // MARK: URLs
         static let ApiScheme = "https"
         static let ParseApiHost = "parse.udacity.com"
         static let ParseApiPath = "/parse"
-        static let UdacityLoginSession = "https://www.udacity.com/api/session"
-        
-        
+        static let LoginSession = "https://www.udacity.com/api/session"
     }
     
-    // MARK: Methods
-    struct Methods {
-        
-        static let StudentLocation = "/classes/StudentLocation"
+    struct LoginSessionResponseKeys {
+        static let Account = "account"
+        static let Registered = "registered"
+        static let AccountKey = "key"
+        static let Session = "session"
+        static let SessionID = "id"
+        static let SessionExpiration = "expiration"
     }
+    
     
 }
+
+// MARK: Methods
+struct ParseMethods {
+    static let StudentLocation = "/classes/StudentLocation"
+}
+    
+
