@@ -11,18 +11,19 @@ import Foundation
 
     
 // MARK: Constants
-struct Constants {
+extension OTMClient {
     
 
-    struct OTM {
+    struct OTMUrls {
         // MARK: URLs
-        static let ApiScheme = "https"
-        static let ParseApiHost = "parse.udacity.com"
-        static let ParseApiPath = "/parse"
-        static let LoginSession = "https://www.udacity.com/api/session"
+        static let UdacityLoginURL = "https://www.udacity.com/api/session"
+        static let ParseMethodURL = "https://parse.udacity.com/parse/classes/StudentLocation"
+        static let ParseLimit = "https://parse.udacity.com/parse/classes/StudentLocation?limit=100"
+        static let OrderByDate = "https://parse.udacity.com/parse/classes/StudentLocationorder?=-updatedAt"
     }
+
     
-    struct LoginSessionResponseKeys {
+    struct UdacityLoginResponseKeys {
         static let Account = "account"
         static let Registered = "registered"
         static let AccountKey = "key"
@@ -31,18 +32,16 @@ struct Constants {
         static let SessionExpiration = "expiration"
     }
     
-    struct ParseParameterKeys {
+    struct Headers {
         // MARK: Parse Parameter Keys
         static let ApiHeader = "X-Parse-REST-API-Key"
         static let AppHeader = "X-Parse-Application-Id"
-        
     }
     
-    struct ParseParameterValues {
+    struct HeaderValues {
         // MARK: Parse Parameter Values
-        static let RestApiKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
+        static let ParseApiKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
         static let ParseAppID = "QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr"
-        static let ParseLimit = 50
     }
     
     struct ParseResponseKeys {
@@ -58,13 +57,8 @@ struct Constants {
         static let Posted = "createdAt"
         static let Updated = "updatedAt"
     }
-    
-    
+
 }
 
-// MARK: Methods
-struct ParseMethods {
-    static let StudentLocation = "/classes/StudentLocation"
-}
     
 
